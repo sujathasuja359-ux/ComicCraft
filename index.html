@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ComicCraft</title>
+</head>
+
+<body>
+
+    <h1>🎨 ComicCraft</h1>
+    <h2>Create Your Own Comic</h2>
+
+    <form action="/generate" method="post">
+
+        <label>Story Prompt:</label><br>
+        <input type="text"
+               name="story_prompt"
+               placeholder="Enter your story idea">
+        <br><br>
+
+        <label>Character Name:</label><br>
+        <input type="text"
+               name="character_name"
+               placeholder="Enter character name">
+        <br><br>
+
+        <label>Setting:</label><br>
+        <input type="text"
+               name="setting"
+               placeholder="Forest, school, city...">
+        <br><br>
+
+        <label>Story Tone:</label><br>
+        <select name="story_tone">
+            <option>Funny</option>
+            <option>Dramatic</option>
+            <option>Adventure</option>
+        </select>
+        <br><br>
+
+        <label>Art Style:</label><br>
+        <select name="art_style">
+            <option>Anime</option>
+            <option>Realistic</option>
+            <option>Comic</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Generate Comic</button>
+
+    </form>
+
+</body>
+</html>
